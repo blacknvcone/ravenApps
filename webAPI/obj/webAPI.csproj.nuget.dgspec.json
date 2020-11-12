@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj": {}
+    "D:\\NetProject\\ravenApps\\webApi\\webAPI.csproj": {}
   },
   "projects": {
-    "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj": {
+    "D:\\NetProject\\ravenApps\\webApi\\webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
+        "projectUniqueName": "D:\\NetProject\\ravenApps\\webApi\\webAPI.csproj",
         "projectName": "webAPI",
-        "projectPath": "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
+        "projectPath": "D:\\NetProject\\ravenApps\\webApi\\webAPI.csproj",
         "packagesPath": "C:\\Users\\raven\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProject\\ravenApps\\webAPI\\obj\\",
+        "outputPath": "D:\\NetProject\\ravenApps\\webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
