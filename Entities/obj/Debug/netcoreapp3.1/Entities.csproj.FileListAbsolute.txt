@@ -1,0 +1,9 @@
+D:\NetProject\ravenApps\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+D:\NetProject\ravenApps\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+D:\NetProject\ravenApps\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+D:\NetProject\ravenApps\Entities\obj\Debug\netcoreapp3.1\Entities.pdb

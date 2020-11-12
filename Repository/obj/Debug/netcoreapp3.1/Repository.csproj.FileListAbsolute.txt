@@ -1,0 +1,14 @@
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Repository.deps.json
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Repository.dll
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Repository.pdb
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Entities.dll
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\NetProject\ravenApps\Repository\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.csprojAssemblyReference.cache
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfoInputs.cache
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfo.cs
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CoreCompileInputs.cache
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CopyComplete
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.dll
+D:\NetProject\ravenApps\Repository\obj\Debug\netcoreapp3.1\Repository.pdb

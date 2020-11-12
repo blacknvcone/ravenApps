@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {}
+    "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
+    "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
+        "projectPath": "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Raven\\.nuget\\packages\\",
-        "outputPath": "d:\\NetProject\\ravenApps\\Entities\\obj\\",
+        "outputPath": "D:\\NetProject\\ravenApps\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Raven\\AppData\\Roaming\\NuGet\\NuGet.Config"

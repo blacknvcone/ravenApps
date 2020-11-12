@@ -677,11 +677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\NetProject\\ravenApps\\Repository\\Repository.csproj",
+      "projectUniqueName": "D:\\NetProject\\ravenApps\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "d:\\NetProject\\ravenApps\\Repository\\Repository.csproj",
+      "projectPath": "D:\\NetProject\\ravenApps\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Raven\\.nuget\\packages\\",
-      "outputPath": "d:\\NetProject\\ravenApps\\Repository\\obj\\",
+      "outputPath": "D:\\NetProject\\ravenApps\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -695,11 +695,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "d:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj": {
-              "projectPath": "d:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj"
+            "D:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj": {
+              "projectPath": "D:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj"
             },
-            "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
-              "projectPath": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj"
+            "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj"
             }
           }
         }

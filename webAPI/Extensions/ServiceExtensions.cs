@@ -1,15 +1,34 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 using Repository;
 using Contracts;
 using Entities;
 
 
-namespace webApi.Extensions
+namespace webAPI.Extensions
 {
     public static class ServiceExtensions
     {
+        public static void ConfigureCors(this IServiceCollection services)
+        {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
+        }
+
+        public static void ConfigureIISIntegration(this IServiceCollection services)
+        {
+            services.Configure<IISOptions>(options =>
+            {
+
+            });
+        }
         //Prepairing Connection Into Mysql
         public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
         {

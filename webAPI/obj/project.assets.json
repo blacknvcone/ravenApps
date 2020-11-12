@@ -932,11 +932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
+      "projectUniqueName": "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
       "projectName": "webAPI",
-      "projectPath": "d:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
+      "projectPath": "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
       "packagesPath": "C:\\Users\\Raven\\.nuget\\packages\\",
-      "outputPath": "d:\\NetProject\\ravenApps\\webAPI\\obj\\",
+      "outputPath": "D:\\NetProject\\ravenApps\\webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -950,8 +950,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "d:\\NetProject\\ravenApps\\Repository\\Repository.csproj": {
-              "projectPath": "d:\\NetProject\\ravenApps\\Repository\\Repository.csproj"
+            "D:\\NetProject\\ravenApps\\Repository\\Repository.csproj": {
+              "projectPath": "D:\\NetProject\\ravenApps\\Repository\\Repository.csproj"
             }
           }
         }

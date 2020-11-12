@@ -7,8 +7,6 @@ namespace Entities
          public RepositoryContext(DbContextOptions options)
             :base(options){}
 
-        public DbSet<Project> Project {get;set;}
-      
-        
+        public DbSet<Project> Project {get; set;}
     }
 }
