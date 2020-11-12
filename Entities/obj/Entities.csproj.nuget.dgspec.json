@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {}
+    "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
+    "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
+        "projectUniqueName": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\raven\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProject\\ravenApps\\Entities\\obj\\",
+        "projectPath": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Raven\\.nuget\\packages\\",
+        "outputPath": "d:\\NetProject\\ravenApps\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -34,11 +34,11 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -52,7 +52,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },

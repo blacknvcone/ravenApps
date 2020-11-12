@@ -24,9 +24,10 @@ namespace Entities.Models
         public string name {get; set;}
         [Required(ErrorMessage = "Company Is Required !")]
         public string company {get; set;}
-        // public  date_start {get; set;}
-        // public System.DateTime date_ent {get; set;}
-        // public System.DateTime created_at {get; set;}
+        public int publish {get; set;}
+        public System.DateTime active_start_date {get; set;}
+        public System.DateTime active_end_date {get; set;}
+        public System.DateTime created_at {get; set;}
 
 
     }

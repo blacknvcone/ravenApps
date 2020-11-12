@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6dMAy8yqETAo+ks5+qLxVCo63zp4q8PUQEHM9QGrQpvdU8Ej1tlvynlnHY8bOQRxoxvSeM7Tv/G7EWa7fYVluQ==",
+  "dgSpecHash": "oourW2wQYgOkTzrYmtf7bvHYDyZ+dEG+NyTXB7pd9nOdqoigIe2m/k3kalQj1azb6MuxDgL/zBmL81Mqxlte+Q==",
   "success": true,
-  "projectFilePath": "d:\\NetProject\\ravenApps\\Entities\\Entities.csproj",
+  "projectFilePath": "d:\\NetProject\\ravenApps\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
