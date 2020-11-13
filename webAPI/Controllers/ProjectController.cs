@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Contracts;
+using Entities;
 
 namespace webAPI.Controllers{
     
@@ -12,23 +13,24 @@ namespace webAPI.Controllers{
     [Route("api/project")]
     public class ProjectController : ControllerBase{
         private IRepositoryWrapper repositoryWrapper;
-        public ProjectController(IRepositoryWrapper repository){
+        private ILoggerManager loggerManager;
+        public ProjectController(IRepositoryWrapper repository, ILoggerManager logger){
+            loggerManager = logger;
             repositoryWrapper = repository;
         }
 
         [HttpGet]
         public IActionResult getAllProjects(){
-            {
-            try
-            {
-                var projects = repositoryWrapper.Project.GetAllProjects();
-                return Ok(projects);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Internal server error");
-            }
-        }
+           
+            var projects = repositoryWrapper.Project.GetAllProjects();
+            var projDTO = projects.Select(c => new ProjectDTO{
+                    idNum = c.id,
+                    nama = c.name,
+                    perusahaan = c.company,
+                    tahunAktif = string.Join('-', c.active_start_date, c.active_end_date) 
+                }).ToList();
+                //throw new Exception("Testing Built in Custom Middleware Exception.");
+            return Ok(projDTO);
         }
     }
 }

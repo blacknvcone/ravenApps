@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g9j6xohaNIYJeYEtlOSZGY0JjYl4nu/F92oE1MP67vURKuZ/1xcin85i62THztNJxcY6fuyVEepA8GqHDsUy6w==",
+  "dgSpecHash": "75/l2F6x7kEY/lO3kv9iYrirwm5llneLpOlzafsGYWiwNJvlol1sgi1J+6PGkQmKoaRW+yEdi8Vb1FdJbI8myA==",
   "success": true,
   "projectFilePath": "D:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\Raven\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"

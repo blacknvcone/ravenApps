@@ -10,14 +10,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using LoggerService;
+using NLog;
+using System.IO;
 using webAPI.Extensions;
 
 namespace webAPI
 {
     public class Startup
-    {
+    {   
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -28,19 +32,23 @@ namespace webAPI
         {
             services.ConfigureCors();
             services.ConfigureIISIntegration();
-            //services.ConfigureLoggerService();
+            services.ConfigureLoggerService();
             services.ConfigureMySqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
+            services.AddSingleton<ILoggerManager, LoggerManager>();
             services.AddControllers();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerManager logger)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+        
+            app.ConfigureExceptionHandler(logger);
 
             app.UseHttpsRedirection();
 

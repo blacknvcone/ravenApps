@@ -1,0 +1,14 @@
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.deps.json
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.pdb
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\Entities.dll
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\NetProject\ravenApps\LoggerService\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csprojAssemblyReference.cache
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfoInputs.cache
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfo.cs
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CopyComplete
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
+D:\NetProject\ravenApps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb

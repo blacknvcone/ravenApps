@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Repository;
 using Contracts;
 using Entities;
+using LoggerService;
 
 
 namespace webAPI.Extensions
@@ -29,6 +30,11 @@ namespace webAPI.Extensions
 
             });
         }
+
+        //Initiate Logger Service
+        public static void ConfigureLoggerService(this IServiceCollection services) =>
+        services.AddScoped<ILoggerManager, LoggerManager>(); 
+        
         //Prepairing Connection Into Mysql
         public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
         {

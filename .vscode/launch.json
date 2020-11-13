@@ -14,6 +14,8 @@
             "args": [],
             "cwd": "${workspaceFolder}/webAPI",
             "stopAtEntry": false,
+            // User-unhandled exceptions: automatically stop the debugger just before exceptions are about to be caught by the framework
+            "justMyCode":false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",

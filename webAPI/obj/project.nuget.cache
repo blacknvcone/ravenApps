@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RTqv97QUNNegzmAdCoNN0lVJNiIMfKl+DEjGVwRAqbJ25lBfWERTa8rAogFaEZZFBVwABkWOydqlKIDOJo9O4A==",
+  "dgSpecHash": "yK3VU96vsJB6v850NxGyqFUO1sQ6x96RLPI6QX9dBwvHA6ylHLnc3hOXnINmx71AwXJRjlIkuQ6HRnOOU1PM8Q==",
   "success": true,
   "projectFilePath": "D:\\NetProject\\ravenApps\\webAPI\\webAPI.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.extensions.options\\3.1.8\\microsoft.extensions.options.3.1.8.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.8\\microsoft.extensions.primitives.3.1.8.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\mysqlconnector\\0.69.9\\mysqlconnector.0.69.9.nupkg.sha512",
-    "C:\\Users\\Raven\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Raven\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Raven\\.nuget\\packages\\nlog\\4.7.5\\nlog.4.7.5.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.4\\pomelo.entityframeworkcore.mysql.3.2.4.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\Raven\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",

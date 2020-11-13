@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webAPI", "webAPI\webAPI.csproj", "{620A7303-16B0-4995-9E02-4891C711D49F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{99624D20-3CFF-43A0-921D-5DCD5A70213F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{620A7303-16B0-4995-9E02-4891C711D49F}.Release|x64.Build.0 = Release|Any CPU
 		{620A7303-16B0-4995-9E02-4891C711D49F}.Release|x86.ActiveCfg = Release|Any CPU
 		{620A7303-16B0-4995-9E02-4891C711D49F}.Release|x86.Build.0 = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|x64.Build.0 = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Debug|x86.Build.0 = Debug|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|x64.ActiveCfg = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|x64.Build.0 = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|x86.ActiveCfg = Release|Any CPU
+		{99624D20-3CFF-43A0-921D-5DCD5A70213F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

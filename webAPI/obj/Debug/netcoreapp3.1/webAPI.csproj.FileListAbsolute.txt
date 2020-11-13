@@ -47,3 +47,7 @@ D:\NetProject\ravenApps\webAPI\obj\Debug\netcoreapp3.1\staticwebassets\webAPI.St
 D:\NetProject\ravenApps\webAPI\obj\Debug\netcoreapp3.1\webAPI.dll
 D:\NetProject\ravenApps\webAPI\obj\Debug\netcoreapp3.1\webAPI.pdb
 D:\NetProject\ravenApps\webAPI\obj\Debug\netcoreapp3.1\webAPI.genruntimeconfig.cache
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\nlog.config
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\NLog.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\LoggerService.pdb
