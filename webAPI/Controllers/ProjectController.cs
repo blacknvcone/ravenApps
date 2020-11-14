@@ -35,7 +35,7 @@ namespace webAPI.Controllers{
             return Ok(projDTO);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}",  Name = "ProjectById")]
         public IActionResult GetProject(int id){
             var project = repositoryWrapper.Project.GetProject(id);
             if(project == null){
@@ -58,7 +58,7 @@ namespace webAPI.Controllers{
 
             repositoryWrapper.Project.CreateProject(_proj);
             repositoryWrapper.Save();
-            return Ok(_proj);
+            return CreatedAtRoute("ProjectById", new { id = _proj.id }, _proj);
         }
     }
 }
