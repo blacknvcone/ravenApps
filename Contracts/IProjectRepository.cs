@@ -9,6 +9,8 @@ namespace Contracts
         Project GetProject(int id);
 
         void CreateProject(Project project);
+        void DeleteProject(Project project);
+        void UpdateProject(Project project);
     }
 
 

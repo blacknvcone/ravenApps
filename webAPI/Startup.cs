@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AutoMapper;
 using Microsoft.Extensions.Logging;
 using LoggerService;
 using NLog;
@@ -36,7 +37,8 @@ namespace webAPI
             services.ConfigureMySqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.AddSingleton<ILoggerManager, LoggerManager>();
-            services.AddControllers();
+            services.AddAutoMapper(typeof(Startup));
+            services.AddControllers().AddNewtonsoftJson();
             
         }
 

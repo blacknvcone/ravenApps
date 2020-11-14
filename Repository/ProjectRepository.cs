@@ -23,6 +23,13 @@ namespace Repository
         public void CreateProject(Project proj){
             Create(proj);
         }
+        public void DeleteProject(Project proj){
+            Delete(proj);
+        }
+
+        public void UpdateProject(Project proj){
+            Update(proj);
+        }
 
     }
 }

@@ -51,3 +51,8 @@ D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\nlog.config
 D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\NLog.dll
 D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\LoggerService.dll
 D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\LoggerService.pdb
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\NetProject\ravenApps\webAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
