@@ -1,6 +1,7 @@
 using Contracts;
 using Entities;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,5 +15,14 @@ namespace Repository
         public IEnumerable<Project> GetAllProjects(){
             return FindAll().OrderBy(ox => ox.name).ToList();
         }
+
+        public Project GetProject(int projId){
+            return FindByCondition(c => c.id.Equals(projId)).SingleOrDefault();
+        }
+
+        public void CreateProject(Project proj){
+            Create(proj);
+        }
+
     }
 }
