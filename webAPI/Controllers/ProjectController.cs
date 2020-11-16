@@ -10,9 +10,14 @@ using Entities;
 using Entities.Models;
 using AutoMapper;
 
+
 /*
 TODO : 
-    - Refactoring Into Async Task Mode
+    - Refactoring Into Async Task Mode [DONE]
+    - Pagination
+    - Search Filter
+    - Sorting
+    - Security (JWT)
 */
 namespace webAPI.Controllers{
     
@@ -30,9 +35,9 @@ namespace webAPI.Controllers{
         }
 
         [HttpGet]
-        public IActionResult GetAllProject(){
+        public async Task<IActionResult> GetAllProject(){
             
-            var projects = repositoryWrapper.Project.GetAllProjects();
+            var projects = await repositoryWrapper.Project.GetAllProjectsAsync();
             var projDTO = projects.Select(c => new ProjectDTO{
                     idNum = c.id,
                     nama = c.name,
@@ -45,8 +50,8 @@ namespace webAPI.Controllers{
         }
 
         [HttpGet("{id}",  Name = "ProjectById")]
-        public IActionResult GetProject(int id){
-            var project = repositoryWrapper.Project.GetProject(id);
+        public async Task<IActionResult> GetProject(int id){
+            var project = await repositoryWrapper.Project.GetProjectAsync(id);
             if(project == null){
                  loggerManager.LogInfo($"Project with id: {id} doesn't exist in the database.");
                  return NotFound();
@@ -57,7 +62,7 @@ namespace webAPI.Controllers{
         }
 
         [HttpPost]
-        public IActionResult CreateProject([FromBody]Project project){
+        public async Task<IActionResult> CreateProject([FromBody]Project project){
             var _proj = new Project();
             _proj.name = project.name;
             _proj.company = project.company;
@@ -66,45 +71,45 @@ namespace webAPI.Controllers{
             _proj.publish = project.publish;
 
             repositoryWrapper.Project.CreateProject(_proj);
-            repositoryWrapper.Save();
+            await repositoryWrapper.SaveAsync();
             return CreatedAtRoute("ProjectById", new { id = _proj.id }, _proj);
         }
 
         [HttpDelete("{id}", Name = "DeleteProjectById")]
-        public IActionResult DeleteProject(int id){
-            var _proj = repositoryWrapper.Project.GetProject(id);
+        public async Task<IActionResult> DeleteProject(int id){
+            var _proj = await repositoryWrapper.Project.GetProjectAsync(id);
             if(_proj == null){
                  loggerManager.LogInfo($"Project with id: {id} doesn't exist in the database.");
                  return NotFound();
             }
 
             repositoryWrapper.Project.DeleteProject(_proj);
-            repositoryWrapper.Save();
+            await repositoryWrapper.SaveAsync();
             return NoContent();
         }
 
         [HttpPut("{id}", Name = "UpdateProjectById")]
-        public IActionResult UpdateProject(int id, [FromBody]ProjectUpdateDTO project){
-            var _proj = repositoryWrapper.Project.GetProject(id);
+        public async Task<IActionResult> UpdateProject(int id, [FromBody]ProjectUpdateDTO project){
+            var _proj = await repositoryWrapper.Project.GetProjectAsync(id);
             if(_proj == null){
                  loggerManager.LogInfo($"Project with id: {id} doesn't exist in the database.");
                  return NotFound();
             }
             _mapper.Map(project, _proj);
             repositoryWrapper.Project.UpdateProject(_proj);
-            repositoryWrapper.Save();
+            await repositoryWrapper.SaveAsync();
 
             return NoContent();
         }
 
         [HttpPatch("{id}", Name = "UpdateProjectValueById")]
-        public IActionResult PatchProject(int id,[FromBody]JsonPatchDocument<ProjectUpdateDTO> projectPatchDoc){
+        public async Task<IActionResult> PatchProject(int id,[FromBody]JsonPatchDocument<ProjectUpdateDTO> projectPatchDoc){
             if(projectPatchDoc == null){
                   loggerManager.LogInfo("projectPathDoc object null");
                  return BadRequest();
             }
 
-            var _proj = repositoryWrapper.Project.GetProject(id);
+            var _proj = await repositoryWrapper.Project.GetProjectAsync(id);
             if(_proj == null){
                  loggerManager.LogInfo($"Project with id: {id} doesn't exist in the database.");
                  return NotFound();
@@ -113,7 +118,7 @@ namespace webAPI.Controllers{
             projectPatchDoc.ApplyTo(projectPacthed);
             _mapper.Map(projectPacthed, _proj);
             repositoryWrapper.Project.UpdateProject(_proj);
-            repositoryWrapper.Save();
+            await repositoryWrapper.SaveAsync();
 
             return NoContent();
         }

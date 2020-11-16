@@ -4,6 +4,7 @@ using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -12,12 +13,12 @@ namespace Repository
         public ProjectRepository(RepositoryContext repositoryContext)
         :base(repositoryContext){}
 
-        public IEnumerable<Project> GetAllProjects(){
-            return FindAll().OrderBy(ox => ox.name).ToList();
+        public async Task<IEnumerable<Project>> GetAllProjectsAsync(){
+            return await FindAll().OrderBy(ox => ox.name).ToListAsync();
         }
 
-        public Project GetProject(int projId){
-            return FindByCondition(c => c.id.Equals(projId)).SingleOrDefault();
+        public async Task<Project> GetProjectAsync(int projId){
+            return await FindByCondition(c => c.id.Equals(projId)).FirstOrDefaultAsync();
         }
 
         public void CreateProject(Project proj){
@@ -28,7 +29,7 @@ namespace Repository
         }
 
         public void UpdateProject(Project proj){
-            Update(proj);
+           Update(proj);
         }
 
     }
