@@ -752,19 +752,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Raven\\.nuget\\packages\\": {}
+    "C:\\Users\\raven\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NetProject\\ravenApps\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "d:\\NetProject\\ravenApps\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "D:\\NetProject\\ravenApps\\LoggerService\\LoggerService.csproj",
-      "packagesPath": "C:\\Users\\Raven\\.nuget\\packages\\",
-      "outputPath": "D:\\NetProject\\ravenApps\\LoggerService\\obj\\",
+      "projectPath": "d:\\NetProject\\ravenApps\\LoggerService\\LoggerService.csproj",
+      "packagesPath": "C:\\Users\\raven\\.nuget\\packages\\",
+      "outputPath": "d:\\NetProject\\ravenApps\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\raven\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -775,8 +775,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj": {
-              "projectPath": "D:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj"
+            "d:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj": {
+              "projectPath": "d:\\NetProject\\ravenApps\\Contracts\\Contracts.csproj"
             }
           }
         }

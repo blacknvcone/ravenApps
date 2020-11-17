@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Contracts;
 using Entities;
 using Entities.Models;
+using Entities.RequestFeatures;
 using AutoMapper;
 
 
@@ -35,9 +36,9 @@ namespace webAPI.Controllers{
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllProject(){
+        public async Task<IActionResult> GetAllProject([FromQuery] ProjectParameters projectParameters){
             
-            var projects = await repositoryWrapper.Project.GetAllProjectsAsync();
+            var projects = await repositoryWrapper.Project.GetAllProjectsAsync(projectParameters);
             var projDTO = projects.Select(c => new ProjectDTO{
                     idNum = c.id,
                     nama = c.name,

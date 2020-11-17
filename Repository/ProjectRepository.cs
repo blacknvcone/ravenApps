@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Entities.RequestFeatures;
 
 namespace Repository
 {
@@ -13,8 +14,11 @@ namespace Repository
         public ProjectRepository(RepositoryContext repositoryContext)
         :base(repositoryContext){}
 
-        public async Task<IEnumerable<Project>> GetAllProjectsAsync(){
-            return await FindAll().OrderBy(ox => ox.name).ToListAsync();
+        public async Task<IEnumerable<Project>> GetAllProjectsAsync(ProjectParameters projectParameters){
+            return await FindAll().OrderBy(ox => ox.name)
+            .Skip((projectParameters.PageNumber - 1) * projectParameters.PageSize)
+            .Take(projectParameters.PageSize)
+            .ToListAsync();
         }
 
         public async Task<Project> GetProjectAsync(int projId){
